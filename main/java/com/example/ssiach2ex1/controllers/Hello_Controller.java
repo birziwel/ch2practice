@@ -9,4 +9,7 @@ public class Hello_Controller {
     public String hello(){
         return "Hello Security!\n";
     }
+    @GetMappin("/hi")
+    public String hi(){
+        return "Hi evryone";
 }
