@@ -16,6 +16,7 @@ public class User implements UserDetails {
     private final String username;
     private final String password;
     private final String authority;
+    private String gender;
     public User(String username, String password,String authority){
         this.username=username;
         this.password=password;
@@ -48,5 +49,11 @@ public class User implements UserDetails {
     @Override
     public boolean isEnabled(){
         return true;
+    }
+    public void setGender(String gender){
+      this.gender=gender;
+    }
+    public String getGender(){
+        return gender;
     }
 }
